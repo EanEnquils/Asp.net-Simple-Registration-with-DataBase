@@ -1,0 +1,73 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-image: url("Image/desk-g1d05d3263_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+
+
+.Login {
+    margin-bottom:20%;
+    margin-left:10%;
+    width: 50%;
+    height: 50%;
+    position: center;
+    right: 0px;
+    
+    text-align: center;
+}
+
+
+
+h3 {
+    font-size: 2.5vw;
+    font-family: "Pacifico";
+    margin-left:50%;
+    margin-bottom:13%;
+    margin-top:6%;
+    color:cadetblue
+}
+
+
+
+input[type=text], input[type=password] {
+    width:30%;
+    height:10%;
+    margin-left:50%;
+    margin-bottom:3%;
+    border:0;
+    background-color:white;
+    border-bottom:1px solid #4b4020;
+}
+
+input[placeholder] {
+    font-size: 1vw;
+    padding-left: 3%;
+    font-family: "Crete Round";
+}
+
+.btn {
+    width: 40%;
+    height: 10%;
+    margin-left:57%;
+    margin-bottom: 9vh;
+    font-family: "Crete Round";
+    font-size: 1.3vw;
+    background-color: turquoise;
+    color: black;
+    border: 1px solid;
+}
+.list{
+   margin-left:60%;
+   margin-right:10%;
+   margin-bottom:5%;
+}
