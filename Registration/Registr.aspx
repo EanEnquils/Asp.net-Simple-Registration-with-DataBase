@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Logowania uzytkownika</title>
+    
+	<title>Logowania uzytkownika</title> //Tytuł strony 
 
     <link href="Style.css" rel="stylesheet" />
 
@@ -20,10 +21,11 @@
        <section>
 
            
-               
+               // Służy do wyświetlania strony responsywnej
                 <div class ="Login">
                      <h3>Logowania</h3>
-                  
+			
+                  //Pola dla podania użytkownikiem danych 
                    <asp:TextBox ID="txtImie" placeholder="Imie Uzytkownika " runat="server" ></asp:TextBox>
                     <br />
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Font-Size="Medium" ForeColor="Red" Display="Dynamic" ControlToValidate="txtImie" ErrorMessage="Proszę podać nazwę użytkownika"></asp:RequiredFieldValidator>
@@ -51,7 +53,7 @@
                
                           
                         
-
+                    //Button logowania uzytkownika
                    <asp:Button ID="Button1" OnClick="Button1_Click"  runat="server" CssClass="btn" Text="Zalogoj Sie" />
 
                     <asp:Label ID="Label1" Visible="False" runat="server" Text="Pomyślnie zarejestrowali się."></asp:Label>
@@ -61,6 +63,7 @@
           
        </section>
     </form>
+	//Dodaje bazy danych jaką stworzyłem 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Uzytkowniky]"></asp:SqlDataSource>
 </body>
  </html>
