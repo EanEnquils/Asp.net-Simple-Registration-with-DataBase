@@ -26,7 +26,7 @@ namespace Registration
             {
                 //polecenie wpisy dane
                 conect.Open();
-                string command = "INSERT INTO Uzytkownik(Imie,email,Passw,Numer,Kategoria) VALUES(@Imie,@email,@Passw,@Numer,@Kategoria)";
+                string command = "INSERT INTO Uzytkowniky(Imie,email,Passw,Numer,Kategoria) VALUES(@Imie,@email,@Passw,@Numer,@Kategoria)";
                 SqlCommand cmd = new SqlCommand(command, conect);
 
                 cmd.Parameters.AddWithValue("@Imie", txtImie.Text);
